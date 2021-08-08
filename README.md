@@ -22,3 +22,5 @@ NTSTATUS DriverEntry(EntryInitialize* entryParam)
 }
 ```
 The current example passes a structure with the image base and size of the mapped driver but it can be modified to your own liking.
+
+![DbgView Example](./example.PNG)
