@@ -1,12 +1,12 @@
 # CosMapper
-Loads a signed kernel driver which allows you to map any driver to kernel mode without any traces of the signed / mapped driver.
+Loads a signed kernel driver (signed with leaked cert) which allows you to map any driver to kernel mode without any traces of the signed / mapped driver.
 
 ## Procedure
-1. The usermode program loads the signed driver 
+1. The usermode program loads the signed driver (signed with leaked cert)
 2. The signed driver then does a [.data] hook on a ntoskrnl function to transfer the mapped driver buffer to kernel
 3. Usermode process sends mapped driver bytes to driver to map and returns status to usermode.
 4. MmUnloadedList PiddbCache and BigPoolAllocation are cleaned and the driver header is not mapped and no empty bytes for the header allocated.
-5. The usermode program unloads the signed driver and deletes the service to remove final traces.
+5. The usermode program unloads the signed driver (signed with leaked cert) and deletes the service to remove final traces.
 
 ## Requirements
 Your driver needs an entry like the example driver:
