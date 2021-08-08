@@ -31,7 +31,8 @@ The current example passes a structure with the image base and size of the mappe
 
 ![DbgView Example](./example.PNG)
 
+The project has been tested on Windows 10 20h2
+
 ## Usage
 
 ```cosmapper.exe driver.sys```
-The project has been tested on Windows 10 20h2
