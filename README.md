@@ -36,4 +36,4 @@ The project has been tested on ``Windows 10 20H2``
 
 ## Usage
 
-```cosmapper.exe driver.sys```
+```cosusermode.exe driver.sys```
