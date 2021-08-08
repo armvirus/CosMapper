@@ -34,3 +34,4 @@ The current example passes a structure with the image base and size of the mappe
 ## Usage
 
 ```cosmapper.exe driver.sys```
+The project has been tested on Windows 10 20h2
